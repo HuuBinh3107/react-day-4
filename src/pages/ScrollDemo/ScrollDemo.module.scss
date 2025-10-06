@@ -1,0 +1,64 @@
+/* Container chính */
+.scrollDemo {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  width: 100%;
+  text-align: center;
+}
+
+.header h2 {
+  font-size: 2.8rem;
+  font-weight: 100;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Nội dung */
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin: 20px 0;
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: center; /* căn giữa nội dung */
+}
+
+/* 🔽 Nút Go To Top */
+.goToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Khi hiện nút */
+.goToTop.show {
+  opacity: 1;
+  visibility: visible;
+}
